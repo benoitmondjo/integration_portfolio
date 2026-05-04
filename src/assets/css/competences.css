@@ -1,16 +1,45 @@
 .competences{
+    padding: 0 2rem;
+   
     .box-container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        /* border: var(--border); */
+        gap: 5rem;
+        padding: 0 1.5em;
 
         .box-check{
             font-size: 1rem;
-            padding-bottom: .2rem;
+            padding-bottom: .8rem;
+           
             .fa-check{
-                font-size: 1.5rem;
+                font-size: 2rem;
                 color: var(--dore_yellow);
             }
+        }
+    }
+}
+@media screen and (max-width: 1250px){
+    .competences{
+        padding: 0;
+    }
+    .competences .box-container{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 750px){
+  .competences .box-container{
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .competences .box-container  .box-check{
+        padding-bottom: .5rem;
+        
+        .fa-check{
+            font-size: 1.5rem;
+            color: var(--dore_yellow);
+        }
+        span{
+            font-size: .9rem;
         }
     }
 }

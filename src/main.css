@@ -2,6 +2,9 @@
 @import './assets/css/header.css';
 @import './assets/css/hero.css';
 @import './assets/css/competences.css';
+@import './assets/css/projets.css';
+@import './assets/css/contact.css';
+@import './assets/css/footer.css';
 
 *{
     padding: 0;
@@ -21,8 +24,11 @@
 }
 html{
     font-size: 16px;
+    overflow-x: hidden;
 }
-
+p,span,button{
+    font-size: 1.1rem;
+}
 body{
     background-color: var(--nigth_blue);
 }
@@ -34,14 +40,27 @@ body{
     max-width: 1300px;
     margin: 0 auto;
     padding: 1rem;
-    /* border: var(--border); */
 }
+
 .section-title{
     font-size: 2rem;
     padding-bottom: 2rem;
     color: var(--dore_yellow);
 }
 .section-padding{
-    padding-top: 5rem;
-    padding-bottom: 2rem;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+@media screen and (max-width: 750px){
+    .container{
+        padding: 0 .5rem;
+    }
+}
+@media screen and (max-width: 580px){
+     .section-title{
+        font-size: 1.5rem;
+    }
+       .container{
+        padding: 0 .2rem;
+    }
 }

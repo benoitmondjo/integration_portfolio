@@ -1,0 +1,58 @@
+footer{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    .logo{
+        display: flex;
+        justify-content: center;
+
+        img{
+            width: 13rem;
+        }
+    }
+    p{
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: bold;
+
+        .fa-regular{
+            color: var(--white);
+            font-size: 2rem;
+        }
+    }
+}
+
+
+@media screen and (max-width: 750px){
+    
+   footer{
+        .logo{
+
+            img{
+                width: 9rem;
+            }
+        }
+        p{
+            font-size: 1.4rem;
+
+            .fa-regular{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 580px){
+   footer{
+        .logo{
+
+            img{
+                width: 7rem;
+            }
+        }
+        p{
+            font-size: 1rem;
+             .fa-regular{
+                font-size: 1rem;
+            }
+        }
+    }
+}
