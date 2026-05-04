@@ -1,10 +1,11 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
 @import "@fontsource/poppins"; 
-@import './assets/css/header.css';
-@import './assets/css/hero.css';
-@import './assets/css/competences.css';
-@import './assets/css/projets.css';
-@import './assets/css/contact.css';
-@import './assets/css/footer.css';
+@import '/src/assets/css/header.css';
+@import '/src/assets/css/hero.css';
+@import '/src/assets/css/competences.css';
+@import '/src/assets/css/projets.css';
+@import '/src/assets/css/contact.css';
+@import '/src/assets/css/footer.css';
 
 *{
     padding: 0;
